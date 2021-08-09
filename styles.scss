@@ -1,0 +1,70 @@
+// @import
+@import 'assets/styles/_variables';
+@import 'assets/styles/_buttons';
+@import 'assets/styles/_typography';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $primary-color;
+    padding: 20px;
+    // uses & to include parent name
+    &__title {
+        color: $text-color;
+    }
+    button {
+        height: 50px;
+        width: 100px;
+    }
+}
+
+.hero {
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    &__title {
+        font-size: 100px;
+        color: $primary-color;
+        margin: 0;
+    }
+    &__subtitle {
+        font-size: 50px;
+        padding: 20px;
+    }
+    button {
+        height: 60px;
+        width: 110px;
+    }
+}
+
+.form {
+    background-color: $grey-background;
+    display: flex;
+    justify-content: center;
+    &__container {
+        height: 150px;
+        width: 200px;
+        border: 1px solid black;
+        padding: 20px;
+        &__contact {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 10px;
+            font-family: $secondary-font;
+            &--send {
+                background-color: $primary-color;
+                color: $text-color;
+                font-family: $primary-font;
+            }
+        }
+    }
+}

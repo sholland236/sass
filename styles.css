@@ -1,0 +1,77 @@
+.btn-primary {
+  background-color: #BF9000;
+  color: white;
+}
+
+.font-primary {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.font-secondary {
+  font-family: "Times New Roman", Times, serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1C4587;
+  padding: 20px;
+}
+.nav__title {
+  color: white;
+}
+.nav button {
+  height: 50px;
+  width: 100px;
+}
+
+.hero {
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+}
+.hero__title {
+  font-size: 100px;
+  color: #1C4587;
+  margin: 0;
+}
+.hero__subtitle {
+  font-size: 50px;
+  padding: 20px;
+}
+.hero button {
+  height: 60px;
+  width: 110px;
+}
+
+.form {
+  background-color: lightgray;
+  display: flex;
+  justify-content: center;
+}
+.form__container {
+  height: 150px;
+  width: 200px;
+  border: 1px solid black;
+  padding: 20px;
+}
+.form__container__contact {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+  font-family: "Times New Roman", Times, serif;
+}
+.form__container__contact--send {
+  background-color: #1C4587;
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
